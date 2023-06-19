@@ -1,0 +1,545 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(153, 153, 226);
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1px;
+    margin: 30px 84px;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.firstSection>div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 2rem;
+}
+
+.leftSection .btn {
+    padding: 8px;
+    background-color: rgb(86, 86, 167);
+    color: white;
+    margin-top: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.rightSection img {
+    width: 80%;
+}
+
+.purple {
+    /* color: rgb(170, 107, 228); */
+
+    color: rgb(164, 88, 231);
+}
+
+.text-gray {
+    color: gray;
+}
+
+#element {
+    /* color: rgb(170, 107, 228); */
+    color: rgb(164, 88, 231);
+}
+
+.thirdSection {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.thirdSection h1 {
+    font-size: 1.9rem
+}
+
+.desc {
+    position: relative;
+    color: rgb(202, 202, 202);
+    width: 100%;
+    font-size: 18px;
+}
+
+.secondSection {
+
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 190px;
+}
+
+.secondSection h1 {
+    font-size: 1.9rem;
+}
+
+.secondSection .box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 20px 0;
+    display: flex;
+
+}
+
+.secondSection .company {
+    position: relative;
+    padding-left: 15px;
+    color: rgb(209, 209, 209);
+    width: 100%;
+    font-size: 15px;
+}
+
+/* 
+.secondSection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 100px;
+} */
+
+/* .image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+} */
+
+.vertical-title {
+    position: relative;
+    font-weight: bold;
+    top: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: #e9e9f1;
+
+}
+
+.vertical-desc {
+    position: relative;
+    top: 20px;
+    color: rgb(199, 199, 199);
+    width: 100%;
+    font-size: 15px;
+}
+
+.skill {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 260px;
+}
+
+.skill h1 {
+    font-size: 1.9rem;
+}
+
+.skill .skill-box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 20px 0;
+    display: flex;
+
+}
+
+.skill .skill-vertical {
+    position: relative;
+    font-weight: bold;
+    top: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: #e9e9f1;
+
+}
+
+.skill .skill-font {
+    /* color: rgb(170, 107, 228); */
+    color: rgb(204, 143, 107);
+}
+
+.project {
+
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 460px;
+}
+
+.project h1 {
+    font-size: 1.9rem;
+}
+
+.project .project-box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 20px 0;
+    display: flex;
+
+}
+
+.project .project-vertical {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: #e9e9f1;
+
+}
+
+.project .orderLine {
+    margin-inline-start: 20px;
+}
+
+.project .project-font {
+    color: rgb(169, 122, 212);
+}
+
+.project span {
+    position: relative;
+    color: rgb(199, 199, 199);
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.project .project-one {
+    padding-bottom: 20px;
+}
+
+
+/* .project .project-two {
+} */
+
+.project ol a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.project ol a:hover {
+    text-decoration: none;
+    color: rgb(153, 153, 226);
+}
+
+.project ol li {
+    font-weight: bold;
+}
+
+.contact {
+    max-width: 80vw;
+    margin: auto;
+    height: auto;
+    margin-bottom: 300px;
+    word-wrap: break-word;
+}
+
+.contact h1 {
+    font-size: 1.9rem;
+}
+
+.contact .contact-box {
+    background: white;
+    width: 80vw;
+    height: 2px;
+    margin: 20px 0;
+    display: flex;
+
+}
+
+.contact .contact-vertical {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: #e9e9f1;
+
+}
+
+.contact-row {
+    display: table;
+    width: 100%;
+    margin-top: 15px;
+    table-layout: fixed;
+    border-spacing: 15px;
+}
+
+.contact-column {
+    display: table-cell;
+    background-color: rgb(230, 230, 230);
+    padding: 50px 20px;
+    height: 100px;
+    text-align: center;
+}
+
+.contact-column i {
+    font-size: 60px;
+    color: rgb(164, 88, 231);
+}
+
+.contact div {
+    color: black;
+
+}
+
+.email {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.phone {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.home {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgb(18 18 62);
+
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: gray;
+    padding: 12px 0;
+}
+
+footer .footer-first h3 {
+    padding-top: 50px;
+}
+
+footer ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: rgb(153, 153, 226);
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* responsive media query start
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+} */
