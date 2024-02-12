@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,400;1,300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --theme-color: crimson;
+  }
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #111;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--theme-color);
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #f1f1f1;
+}
+
+/* hide arrow of input number type */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+}
+
+/* common css */
+.about, .experince, .skill, .project, .contact{
+    background-color: #111;
+    color: #f1f1f1;
+}
+.aaa{
+    color: var(--theme-color);
+}
+
+/* scroll up btn */
+.scroll-up-btn{
+	position: fixed;
+	height: 45px;
+	width: 42px;
+	background: var(--theme-color);
+	right: 30px;
+	bottom: 10px;
+	text-align: center;
+	line-height: 45px;
+	color: #111;
+	z-index: 9999;
+	font-size: 30px;
+	border-radius: 6px;
+	border-bottom-width: 2px;
+	cursor: pointer;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+	bottom: 30px;
+	opacity: 1;
+	pointer-events: auto;
+}
+.scroll-up-btn:hover{
+	filter: brightness(90%);
+}
+
+/* navbar */
+.navbar{
+	background-color: #000000;
+}
+.navbar .navbar-brand{
+	font-weight: 600;
+	font-size: 25px;
+}
+.navbar #x{
+	color: var(--theme-color);
+}
+.navbar .navbar-brand:hover{
+	color: #f1f1f1;
+	transition: 1s ease;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+	color: #f1f1f1;
+}
+.collapse .navbar-nav .nav-item .nav-link:hover{
+	color: var(--theme-color);
+	transition: 1s ease;
+}
+.collapse .navbar-nav .nav-item .nav-link i{
+	color: var(--theme-color);
+}
+.navbar .navbar-toggler{
+	border: 1px solid var(--theme-color);
+}
+
+/* home section styling */
+.home{
+	display: flex;
+	background: url("images/pbanner.jpg") no-repeat center;
+	height: 70vh;
+	background-size: cover;
+	background-attachment: fixed;
+	color: #f1f1f1;
+	min-height: 500px;
+	font-family: 'Ubuntu', sans-serif;
+    /* animation: chnagebanner 50s linear infinite; */
+}
+@keyframes chnagebanner{
+    0%{
+        background: url("images/pbanner.jpg") no-repeat center;
+        height: 70vh;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+    25%{
+        background: url("images/b1.jpg") no-repeat center;
+        height: 70vh;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+    50%{
+        background: url("images/b2.jpg") no-repeat center;
+        height: 70vh;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+    75%{
+        background: url("images/b3.jpg") no-repeat center;
+        height: 70vh;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+    100%{
+        background: url("images/pbanner.jpg") no-repeat center;
+        height: 70vh;
+	    background-size: cover;
+	    background-attachment: fixed;
+    }
+}
+
+.home .max-width{
+  	width: 100%;
+  	display: flex;
+}
+.home .max-width .row{
+  	margin-right: 0;
+}
+.home .home-content .text-1{
+	font-size: 23px;
+}
+.home .home-content .text-2{
+	font-size: 35px;
+	font-weight: 600;
+	color: var(--theme-color);
+	/* margin-left: -3px; */
+}
+.home .home-content .text-3{
+	font-size: 31px;
+	margin: 5px -3px;
+}
+.home .home-content .text-3 span{
+	color: var(--theme-color);
+	font-weight: 500;
+}
+.home .home-content a{
+	text-decoration: none;
+	display: inline-block;
+	background: var(--theme-color);
+	color: #000;
+	font-size: 17px;
+	padding: 9px 27px;
+	margin-top: 20px;
+	font-weight: 400;
+	border-radius: 6px;
+	border: 2px solid var(--theme-color);
+	transition: 1s ease-in-out;
+}
+.home .home-content a:hover{
+	color: var(--theme-color);
+	background: none;
+	transition: 1s ease-in-out;
+}
+
+/* about section styling */
+.about .about-content .right img{
+	height: 480px;
+	width: 400px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+.about .about-content .left .text{
+	font-size: 19px;
+    font-weight: 600;
+}
+.about .about-content .left .text span{
+	color: var(--theme-color);
+}
+.about .about-content .left p{
+	text-align: justify;
+    font-size: 15px;
+    font-weight: normal;
+    color: #cececece;
+}
+.about .about-content .left a{
+	text-decoration: none;
+	display: inline-block;
+	background: var(--theme-color);
+	color: #000;
+	font-weight: 500;
+	padding: 10px 30px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid var(--theme-color);
+	transition: 1s ease-in-out;
+}
+.about .about-content .left a:hover{
+	color: var(--theme-color);
+	background: none;
+	transition: 1s ease-in-out;
+}
+
+/* experince section */
+.experince .company {
+    color: #f1f1f1;
+}
+.vertical-title {
+    font-size: 20px;
+    color: var(--theme-color);
+}
+.vertical-desc{
+    font-size: 15px;
+    font-weight: normal;
+    color: #cececece;
+}
+
+/* skill section */
+.skill .skill-vertical {
+    font-size: 17px;
+    color: var(--theme-color);
+}
+.skill .skill-font {
+    color: #cececece;
+    font-size: 17px;
+}
+
+/* project section */
+.project .project-vertical{
+    color: var(--theme-color);
+    font-size: 17px;
+}
+.project .project-font {
+    color: var(--theme-color);
+}
+ .project .details {
+    font-size: 15px;
+    font-weight: normal;
+    color: #cececece;
+} 
+.project ol a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+}
+.project ol a:hover {
+    transition: 1s ease-in-out;
+    text-decoration: none;
+    color: var(--theme-color);
+}
+
+
+/* contact section styling */
+.contact .title::before{
+	background: #f1f1f1;
+}
+
+.contact .contact-content .text-light{
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+.contact .contact-content #g{
+	color: var(--theme-color);
+	font-size: 32px;
+}
+.contact .contact-content .left p{
+	text-align: justify;
+}
+.contact .contact-content .left .icons{
+	margin: 10px 0;
+}
+.contact .contact-content .row i{
+	font-size: 25px;
+	color: var(--theme-color);
+}
+.contact .contact-content .info .head{
+	font-weight: 500;
+}
+.contact .contact-content .info .sub-title a{
+	font-size: 15px;
+	font-weight: 400;
+}
+/* .contact .right form .contrast-input input,
+.contact .right form textarea{
+	border-bottom: 3px solid var(--theme-color);
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding: 7px;
+	font-size: 15px;
+	transition: all 0.3s ease;
+	background: none;
+	color: #f1f1f1;
+} */
+/* .contact .right form .contrast-input input::placeholder,
+.contact .right form textarea::placeholder{
+	color: #f1f1f1;
+} */
+/* .contact .right form .btn{
+	color: #111;
+    outline: none;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-wrap: nowrap;    
+    background: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    transition: 1s ease-in-out;
+}
+.contact .right form .btn:hover{
+	color: var(--theme-color);
+  	background: none;
+	transition: 1s ease-in-out;
+} */
+
+/* footer section styling */
+footer{
+	background: #111;
+	padding: 15px 23px;
+	color: #f1f1f1;
+	text-align: center;
+}
+footer span a{
+	color: var(--theme-color);
+	text-decoration: none;
+}
+
+.social ul li a img{
+	width: 30px;
+}
+
+footer .row h1 #t{
+    color: var(--theme-color);
+}
+
+/* theme toggle btn */
+.theme-toggler {
+    position: fixed;
+    top: 10rem;
+    right: -10.5rem;
+    background: #111;
+    z-index: 1000;
+    width: 10rem;
+    text-align: center;
+  }
+.theme-toggler.active {
+  right: 0;
+}
+.theme-toggler h3 {
+  color: #fff;
+  padding: 4%;
+  font-size: 19px;
+}
+.theme-toggler .buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.theme-toggler .buttons .theme-btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.theme-toggler .toggle-btn {
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  padding: 5%;
+  background: #111;
+  cursor: pointer;
+}
+.theme-toggler .toggle-btn i {
+  color: #fff;
+  font-size: 23px;
+  animation: spin 4s linear infinite;
+}
+  
+@keyframes spin {
+    0% {
+      transform: rotate(360deg);
+    }
+}
